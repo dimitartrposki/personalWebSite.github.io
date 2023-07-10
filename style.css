@@ -1,0 +1,639 @@
+/* ------------------------------------------------------------------------------------------------------------------ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #494949;
+}
+
+h2, h3 {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+p:not(footer p) {
+    line-height: 1.3;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------ Навигација ------------------------------------------------------ */
+#logo5 img {
+    height: 120px;
+    width: 80px;
+    border-radius: 150px;
+    margin-right: 100px;
+    border: 2px solid white;
+}
+
+#header5 {
+    background: black;
+    padding: 10px 220px 10px 220px;
+    border-bottom: 4px solid white;
+}
+
+#header5 * {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header5 a {
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header5 a:hover {
+    color: black;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px 10px;
+    vertical-align: center;
+}
+
+#biografija1 a, #obrazovanie1 a, #nagradi1 a, #sport1 a, #hobi1 a {
+    color: black;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* ----------------------------------------------- Почетна страна --------------------------------------------------- */
+#header {
+    background: url("Images/welcome.png") no-repeat;
+    height: 345px;
+    width: 920px;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+
+#nav {
+    margin: 5px 0 0 0;
+    height: 605px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #494949;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+#nav a:hover {
+    color: black;
+}
+
+#pochetnaStrana img {
+    height: 410px;
+    width: 280px;
+    border: 2px solid white;
+    border-radius: 200px;
+    position: relative;
+    left: 630px;
+}
+
+#biografija {
+    background: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    top: -350px;
+    left: 310px;
+}
+
+#biografija a {
+    position: relative;
+    left: 20px;
+    top: 35px;
+    font-size: 28px;
+}
+
+#obrazovanie {
+    background: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    top: -450px;
+    left: 1020px;
+}
+
+#obrazovanie a {
+    position: relative;
+    left: 9px;
+    top: 35px;
+    font-size: 28px;
+}
+
+#nagradi {
+    background: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    top: -350px;
+    left: 360px;
+}
+
+#nagradi a {
+    position: relative;
+    left: 43px;
+    top: 35px;
+    font-size: 28px;
+}
+
+#sport {
+    background: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    top: -450px;
+    left: 975px;
+}
+
+#sport a {
+    position: relative;
+    left: 56px;
+    top: 35px;
+    font-size: 28px;
+}
+
+#hobi {
+    background: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    top: -360px;
+    left: 668px;
+}
+
+#hobi a {
+    position: relative;
+    left: 63px;
+    top: 35px;
+    font-size: 28px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------- Биографија ----------------------------------------------------- */
+#container {
+    display: grid;
+    grid-template-areas: "l m r";
+    gap: 50px;
+    width: 1080px;
+    margin: 30px auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+
+#container img {
+    width: 150px;
+    height: auto;
+    display: block;
+    transition: transform 0.20s ease;
+}
+
+#container img:hover {
+    transform: scale(1.40);
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+#biografijaText {
+    color: white;
+    grid-area: m;
+    width: 600px;
+    margin: 12px 0 0 -89px;
+}
+
+#biografijaText p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+#biografijaText h3 {
+    margin: 0 0 10px 0;
+    font-size: 23px;
+}
+
+#biografijaText p:first-of-type {
+    border-top: 2px solid grey;
+    padding-top: 5px;
+}
+
+#slikiL {
+    grid-area: l;
+    width: 240px;
+    margin-right: 40px;
+}
+
+#slikiL img:first-of-type {
+    border-top-left-radius: 10px;
+    border-left: 2px solid white;
+}
+
+#slikiL img:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-left: 2px solid white;
+}
+
+#slikiR {
+    grid-area: r;
+    width: 240px;
+    margin-left: 40px;
+}
+
+#slikiR img:first-of-type {
+    border-top-right-radius: 10px;
+    border-right: 2px solid white;
+}
+
+#slikiR img:last-of-type {
+    border-bottom-right-radius: 10px;
+    border-right: 2px solid white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------ Образование ----------------------------------------------------- */
+#obrazovanieText {
+    color: white;
+    margin: 0 220px;
+}
+
+#obrazovanieText img {
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#obrazovanieText1 {
+    margin: 30px 0;
+}
+
+#obrazovanieText1 img {
+    height: auto;
+    width: 450px;
+}
+
+#obrazovanieText2, #obrazovanieText3 {
+    margin-bottom: 30px;
+}
+
+#obrazovanieText2 img {
+    height: auto;
+    width: 450px;
+}
+
+#obrazovanieText3 img {
+    height: auto;
+    width: 450px;
+}
+
+#obrazovanieText1, #obrazovanieText2, #obrazovanieText3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#obrazovanieText1\.1 p, #obrazovanieText2\.1 p, #obrazovanieText3\.1 p {
+    margin: 20px 0 0 0;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+#obrazovanieText1\.1 h3, #obrazovanieText2\.1 h3, #obrazovanieText3\.1 h3 {
+    border-bottom: 2px solid grey;
+    margin: 5px 0 0 0;
+    padding: 0 0 3px 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* -------------------------------------------------- Награди ------------------------------------------------------- */
+#nagradiText {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+    padding: 20px 230px;
+    text-align: center;
+}
+
+#nagradiText img {
+    height: 190px;
+    width: 200px;
+    margin: 10px 0 20px 0;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#nagradiText ul {
+    margin: 30px 0 0 0;
+    color: white;
+}
+
+#nagradiText h2 {
+    font-size: 23px;
+}
+
+#nagradiText li {
+    border-top: 1px solid grey;
+    list-style: none;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+#nagradiText li:last-of-type {
+    margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* --------------------------------------------------- Спорт -------------------------------------------------------- */
+#sportText {
+    width: 1080px;
+    margin: auto;
+}
+
+#sportText a {
+    color: white;
+}
+
+#sportText a:hover {
+    color: grey;
+}
+
+#sportText h2 {
+    font-size: 25px;
+}
+
+#sportText h2 a {
+    text-decoration: none;
+    border-bottom: 3px solid grey;
+    padding-bottom: 1px;
+}
+
+#sportTextSlika1 img, #sportTextSlika2 img, #sportTextSlika3 img {
+    width: 510px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#sportText2 {
+    display: grid;
+    grid-template-areas: "l r";
+    border-bottom: 2px solid grey;
+    margin: 20px 0;
+    padding: 5px 0 20px 0;
+}
+
+#sportText4 {
+    display: grid;
+    grid-template-areas: "l r";
+    margin: 20px 0;
+    padding: 5px 0 0 0;
+}
+
+#sportTextSlika1, #sportTextSlika3 {
+    grid-area: r;
+    position: relative;
+    right: -58px;
+}
+
+#sportText2\.1, #sportText4\.1 {
+    grid-area: l;
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
+    left: 48px;
+    top: 10px;
+}
+
+#sportText3 {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 20px 0;
+    border-bottom: 2px solid white;
+    padding: 5px 0 20px 0;
+}
+
+#sportText3\.1 {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#sportText2\.1, #sportText3\.1, #sportText4\.1 {
+    width: 450px;
+    padding: 10px 0;
+}
+
+#sportText2\.1 p, #sportText3\.1 p, #sportText4\.1 p {
+    text-align: justify;
+    text-indent: 50px;
+    padding: 15px 0 0 0;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------- Хоби -------------------------------------------------------- */
+#hobiText {
+    /*height: 100px;*/
+    width: 1080px;
+    margin: auto;
+}
+
+#hobiText a {
+    color: white;
+}
+
+#hobiText a:hover {
+    color: grey;
+}
+
+#hobiText h2 {
+    font-size: 25px;
+}
+
+#hobiText2 {
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid grey;
+}
+
+#hobiText2, #hobiText4 {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+#hobiTextSlika1 img, #hobiTextSlika2 img, #hobiTextSlika3 img {
+    width: 420px;
+    height: 230px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#hobiText2\.1, #hobiText3\.1, #hobiText4\.1 {
+    width: 600px;
+    padding: 10px 0;
+}
+
+#hobiText2\.1 p, #hobiText3\.1 p, #hobiText4\.1 p {
+    text-align: justify;
+    text-indent: 50px;
+    padding: 15px 0 0 0;
+    color: white;
+}
+
+#hobiText3 {
+    display: grid;
+    grid-template-areas: "l r";
+    border-bottom: 2px solid grey;
+    padding: 5px 0 20px 0;
+    text-align: right;
+}
+
+#hobiText4 {
+    padding: 5px 0 0 0;
+}
+
+#hobiTextSlika2 {
+    grid-area: r;
+}
+
+#hobiText3\.1 {
+    grid-area: l;
+    position: relative;
+    top: -5px;
+    right: -25px;
+}
+
+#hobiText h2 a {
+    text-decoration: none;
+    border-bottom: 3px solid grey;
+    padding-bottom: 1px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* --------------------------------------------------- Футер -------------------------------------------------------- */
+footer {
+    background: black;
+    color: white;
+    border-top: 4px solid white;
+}
+
+footer h3 {
+    display: inline-block;
+    border-bottom: 2px solid #494949;
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    font-size: 19px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    padding: 20px 0;
+    display: grid;
+    grid-template-areas: "l m r";
+    gap: 100px;
+    width: 900px;
+    margin-left: 180px;
+}
+
+footer iframe {
+    height: 200px;
+    width: 450px;
+    padding: 5px 0 10px 0;
+    display: block;
+    border-radius: 10px;
+}
+
+footer p:not(#contact p) {
+    padding: 0 0 10px 0;
+}
+
+#info {
+    grid-area: l;
+    width: 300px;
+    /*margin-right: 100px;*/
+}
+
+#info p {
+    border-bottom: 2px solid #494949;
+    margin: 10px 0;
+}
+
+#map {
+    grid-area: m;
+    width: 280px;
+}
+
+#mail:hover {
+    color: #1c9bee;
+}
+
+#contact span {
+    /*border-bottom: 2px solid #494949;*/
+}
+
+#contact {
+    grid-area: r;
+    margin-left: 170px;
+    width: 250px;
+}
+
+#contact p span {
+    position: relative;
+    top: -8px;
+    left: 3px;
+}
+
+#contact img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#contact p:first-of-type a:hover {
+    color: #1877f1;
+}
+
+#contact p:nth-of-type(2) a:hover {
+    color: #da2d71;
+}
+
+#contact p:last-of-type a:hover {
+    color: #29a7de;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
